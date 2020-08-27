@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>pizzastore</title>
+</head>
+
+<body>
+    <header class="container-fluid bg-warning">
+        <div class="row">
+            <div class="col text-center">
+                <h1> <i class="fa fa-pizza-slice fa-spin" aria-hidden="true"></i> Tims Pizza Store <i
+                        class="fa fa-pizza-slice fa-spin" aria-hidden="true"></i> </h1>
+            </div>
+        </div>
+    </header>
+    <main class="container-fluid">
+        <div class="row">
+            <form class="col mt-3" onsubmit="app.pizzasController.createPizza(event)">
+                <div class="form-group">
+                    <input type="text" name="name" id="name" class="form-control" placeholder="Enter pizza name"
+                        aria-describedby="helpId">
+                    <button class="btn btn-success form-control" type="submit">Create</button>
+                </div>
+            </form>
+        </div>
+        <div class="row" id="pizzas">
+        </div>
+    </main>
+    <footer class="container-fluid bg-warning">
+        <div class="row text-center">
+            <div class="col">
+                <h3>Made with love by Fall 2020</h3>
+            </div>
+        </div>
+    </footer>
+    <script src='https://kit.fontawesome.com/d2e00f75e8.js' crossorigin='anonymous'></script>
+    <script src="app/main.js" type="module"></script>
+</body>
+
+</html>
